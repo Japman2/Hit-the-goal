@@ -1,6 +1,6 @@
 
 // Create canvas variable
- var canvas = new fabric.Canvas('myCanvas');
+ var canvas = new fabric.Canvas("myCanvas");
 
 ball_x = 0;
 ball_y = 0;
@@ -10,7 +10,7 @@ block_image_width = 5;
 block_image_height = 5;
 
 function load_img(){
-	fabric.Image.fromURL("golf-h.png", function (Img) {
+	fabric.Image.fromURL("golf-h1.png", function (Img) {
 		hole_obj = Img;
 
 		hole_obj.scaleToWidth(50);
@@ -19,7 +19,7 @@ function load_img(){
 		top:hole_y,
 		left:hole_x
 		});
-		canvas.add(ball_obj);
+		canvas.add(hole_obj);
 	});
 
 	// write code to Upload golf image on the canvas
